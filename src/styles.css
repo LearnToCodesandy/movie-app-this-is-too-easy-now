@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300;500&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+:root {
+  --white: #ffffffff;
+  --jasmine: #8116fc;
+  --rich-black-fogra-29: #061826ff;
+  --clr-shade-dark: #faf9a9;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--rich-black-fogra-29);
+}
+
+#root {
+  width: 90%;
+  margin: 1rem auto;
+  font-family: "Red Hat Mono", monospace;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+h1 {
+  color: var(--white);
+}
+
+.movie-header {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  color: var(--rich-black-fogra-29);
+}
+
+button {
+  padding: 0.5rem 0.75rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: var(--jasmine);
+  color: #fff;
+}
+
+.movie-body {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+  margin: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+h2 {
+  margin: 1rem 0;
+}
+
+.badge {
+  background: rgb(255, 80, 80);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 80, 80, 1) 25%,
+    rgba(255, 131, 65, 0.6026785714285714) 99%
+  );
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  display: inline-block;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
